@@ -1,33 +1,50 @@
 # Error Message
 
-## Template
+## User Manager
 
-* HTTP 200 OK
-
-```json
-{
-  "message": "OK",
-  "data": [{
-    "field1": "asd",
-    "field2": ["asd", "asd"]
-  }]
-}
-```
-
-* HTTP 403 404 500
+* OK
 
 ```json
 {
-  "message": "asdasd",
-  "errors": [{
-    "field1": "err",
-    "field2": "err2"
-  }]
+  "code": 100,
+  "message": "OK"
 }
 ```
 
+* Username or Password Error
+
 ```json
 {
-  "message" : "err"
+  "code": 101,
+  "message": "username_or_password_err"
 }
 ```
+
+* Username or Password Invaild
+
+```json
+{
+  "code": 102,
+  "message": "username_or_password_invaild"
+}
+```
+
+* Username Duplicated
+
+```json
+{
+  "code": 103,
+  "message": "username_duplicated"
+}
+```
+
+* Session expired
+
+```json
+{
+  "code": 104,
+  "message": "session_expired"
+}
+```
+
+
