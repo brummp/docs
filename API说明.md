@@ -1,3 +1,4 @@
+tips: user-id is yige yonghu id d header
 # API说明
 ## 登录注册模块
 ### /sign/in
